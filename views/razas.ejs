@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Razas almacenadas</title>
+  </head>
+  <body>
+    <h1>Razas almacenadas</h1>
+    <ul>
+      <% for (const raza of razas) { %>
+        <li>
+          <strong><%= raza.nombre %></strong>
+          (<%= raza.tipo %>) - <%= raza.descripcion %>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
